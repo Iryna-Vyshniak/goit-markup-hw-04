@@ -389,10 +389,8 @@ body {
 }
 
 .item-business {
-  position: relative;
   display: flex;
   max-width: 370px;
-  /* min-height: 294px; */
 }
 
 /* ========================================  MEMBER TEAM  =================================================*/
