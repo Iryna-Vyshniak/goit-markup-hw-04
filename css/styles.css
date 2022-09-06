@@ -124,8 +124,8 @@ body {
   margin: -1px;
 }
 
-/* ===================================================================================================================================== */
-/* HEADER */
+/* ===================================== HEADER ========================================================= */
+/*  */
 
 .page-header {
   /* position: fixed;
@@ -234,17 +234,12 @@ body {
   fill: currentColor;
 }
 
-/* ===================================================================================================================================== */
-/* HERO */
+/* ============================== HERO ==================================================================== */
 
 .hero {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-
+  padding-top: 200px;
+  padding-bottom: 200px;
   max-width: 1600px;
-  min-height: 600px;
   margin-left: auto;
   margin-right: auto;
 
@@ -305,8 +300,7 @@ body {
   box-shadow: var(--hero-btn-shadow);
 }
 
-/* ===================================================================================================================================== */
-/* SECTIONS */
+/* =================================== SECTIONS ===================================================== */
 
 .section-title {
   margin-top: 0;
@@ -332,8 +326,7 @@ body {
   color: var(--secondary-text-color);
 }
 
-/* =========================================================================================================================================*/
-/* COMPANY ADVANTAGES */
+/* ================================  COMPANY ADVANTAGES  ================================================*/
 
 .company-advantages {
   padding-bottom: 47px;
@@ -357,10 +350,9 @@ body {
   justify-content: center;
 
   max-width: 270px;
-  /* min-height: 120px; */
+  min-height: 120px;
   margin-top: 0;
   margin-bottom: 30px;
-  padding: 25px 101px;
 
   background: var(--bg-ghost-white);
   border-radius: 4px;
@@ -390,8 +382,7 @@ body {
   font-size: var(--secondary-font-size);
 }
 
-/* ========================================================================================================================================*/
-/* BUSINESS */
+/* =============================  BUSINESS  =============================================================*/
 
 .business {
   padding-top: 47px;
@@ -404,17 +395,13 @@ body {
   /* min-height: 294px; */
 }
 
-/* ======================================================================================================================================*/
-/* MEMBER TEAM */
+/* ========================================  MEMBER TEAM  =================================================*/
 .member-team {
   background-color: var(--bg-ghost-white);
 }
 
 .item-member {
   max-width: 270px;
-  padding-bottom: 30px;
-  /* min-height: 428px; */
-
   background-color: var(--white-color);
   box-shadow: var(--team-box-shadow);
   border-radius: 0px 0px 4px 4px;
@@ -424,7 +411,13 @@ body {
 
 .images-member {
   display: block;
-  margin-bottom: 30px;
+}
+
+.member-content {
+  padding-top: 30px;
+  padding-bottom: 30px;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 
 .title-name {
@@ -471,9 +464,8 @@ body {
 .socials-icon {
   fill: currentColor;
 }
-/* =================================================================================================================================== */
+/* ===================================== CLIENTS  ========================================================= */
 /* Постійні клієнти */
-/* CLIENTS */
 
 .logo-clients {
   display: flex;
@@ -497,8 +489,7 @@ body {
   fill: currentColor;
 }
 
-/* ====================================================================+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++= */
-/* FOOTER */
+/* ===========================   FOOTER  ====================================================================*/
 
 .page-footer > .container {
   display: flex;
@@ -551,9 +542,7 @@ body {
   fill: currentColor;
 }
 
-/* ==================================================================================================================================== */
-/* PORTFOLIO PAGE */
-
+/* =============================== PORTFOLIO PAGE  ======================================================== */
 /* filter */
 
 .filter-cards {
@@ -590,8 +579,8 @@ body {
   box-shadow: var(--active-shadow);
 }
 
-/* ============================================================================================================================== */
-/* project-cards */
+/* ================================ project-cards ========================================================= */
+
 .project-cards {
   display: flex;
   flex-wrap: wrap;
@@ -601,8 +590,6 @@ body {
   width: calc((100% - 60px) / 3);
   margin-right: 30px;
   margin-bottom: 30px;
-
-  border-bottom: 1px solid var(--border-whisper-grey);
 }
 
 .project-item:nth-child(3n) {
@@ -617,7 +604,18 @@ body {
   display: block;
   max-width: 100%;
   margin-top: 0;
-  margin-bottom: 20px;
+  margin-bottom: 0;
+}
+
+.project-content {
+  padding-left: 24px;
+  padding-right: 24px;
+  padding-bottom: 20px;
+  padding-top: 20px;
+
+  border-left: 1px solid var(--border-whisper-grey);
+  border-right: 1px solid var(--border-whisper-grey);
+  border-bottom: 1px solid var(--border-whisper-grey);
 }
 
 .project-title {
@@ -630,18 +628,9 @@ body {
 }
 
 .project-description {
+  margin-top: 0;
+  margin-bottom: 0;
   line-height: 1.9;
-}
-
-.project-content {
-  padding-left: 24px;
-  padding-right: 24px;
-  padding-bottom: 20px;
-  /* may be better use code with codes in .project-cards__content, .project-cards__item, .thumb-overlay,  than content will be 322 x 70, but focus separated blocks in card */
-  /* max-width: 322px;
-  min-height: 70px;
-  margin-right: auto;
-  margin-left: auto; */
 }
 
 .project-item:hover,
